@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: Admin
+      POSTGRES_PASSWORD: Passw0rd.  # Replace 'your_password_here' with a secure password
+      POSTGRES_DB: ServiceRentalApp
+    ports:
+      - "7080:5432"  # Map port 7080 on the host to port 5432 in the container
